@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+    <main class="grid grid-cols-3 max-w-7xl mx-auto p-4 gap-10">
+        {% for recipe in recipes %}
+            {% include "partials/recipes.html" %}
+        {% endfor %}
+    </main>
+    
+{% endblock body %}
